@@ -176,6 +176,26 @@ export const NestedEdges = () => {
       ...nodeDimensions.typeB
     },
     {
+      id: '2.2.1',
+      parent: '2.2',
+      label: 'B',
+      name: 'Task 2',
+      layoutOptions:{
+        portConstraints: 'FREE',
+      },
+      ...nodeDimensions.typeB
+    },
+    {
+      id: '2.2.2',
+      parent: '2.2',
+      label: 'B',
+      name: 'Task 3',
+      layoutOptions:{
+        portConstraints: 'FREE',
+      },
+      ...nodeDimensions.typeB
+    },
+    {
       id: '3',
       layoutOptions:{
         portConstraints: 'FREE',
@@ -193,6 +213,11 @@ export const NestedEdges = () => {
       id: '1-2.1.1',
       from: '1',
       to: '2.1.1'
+    },
+    {
+      id: '2.2.1-2.2.2',
+      from: '2.2.1',
+      to: '2.2.2'
     },
     {
       id: '2.1-2.2',
